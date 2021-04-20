@@ -36,10 +36,20 @@ UI & Implementation:
 
 Concept: 
 - The idea behind the scoring system is to have multiple factors contributing to the overall score that will be used to determine if a user passed the level or not.
-- The two factors used to determine overall score were the amount of fruit collected and the karma value. 
+- The two factors used to determine overall score were the amount of fruit collected (main quest) and the karma value. 
 - The raw values of fruit collected and karma had to be weighted so that their impact on the score correctly reflected their respective importance to the overall
   game.
   - Fruit Score Value: (Number of Fruit Collected) * 10
   - Karma Score Value: ( (Karma Value) * 3)
 - The score is initialized at zero so negative changes in karma can be reflected by a negative score. Before we decided to initialize the score to zero, it was set   to initialize at 150, the karma meter initializes with a value of 50, so its score value (50 * 3). However, having the score start at zero and go up or down from   there seemed to represent the changes in karma better.
 - The minimum required score for level completion is approximately (max possible level score)/3. So for level 1, the maximum possible score is 200, and the minimum   required score is 60.
+- Possible increments/decrements to the score:
+  - Fruit Collection: +10 score
+  - Karma Increase (Side Quest Completion): +30 score
+  - Karma Decrease (Caught Eating Villager): -45 score
+  
+  Implementation: 
+  - ScoreManager.cs holds the methods responsible for updating and displaying the score. 
+  - PlayerPrefs variables were used to keep track of the score throughout level changes. 
+  - The function updateScore(int scoreVal) takes the parameter scoreVal and adds it to the current score. This function also updates the PlayerPrefs variable for
+    score.
