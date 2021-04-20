@@ -27,3 +27,8 @@ UI & Implementation:
     - The actual hunger increments and decrements are handles in PlayerBehaviors.cs. The hunger begins at 75 out of 100 units and begins decreasing from the start
       at a rate of 1.5 units per second.
     - Eating a villager increases the hunger value by 10 units.
+  - Karma Logistics
+    - Karma starts at 0 and has two possible increments/decrements to its value
+    - Possible changes to karma:
+      - Side Quest Completion: +10 karma units
+      - Caught Eating Villager: -15 karma units 
