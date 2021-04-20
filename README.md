@@ -22,6 +22,8 @@ UI & Implementation:
 - Implementation
   - The value of the player's hunger and karma meters are tracked through variables stored within the script PlayerBehaviors.cs. The eat() method adds to the 
     player’s hunger meter, and the changeKarma() method adds or subtracts a certain value passed through from the user’s Karma Meter. 
-    - HungerBar_Script.cs was used to receive and evaluate the hunger and karma values received from the eat() and changeKarma() methods in PlayerBehaviors.cs.
-  - The actual hunger increments and decrements are handles in PlayerBehaviors.cs. The hunger begins at 75 out of 100 units and begins decreasing from the start at    a rate of 1.5 units per second.
-  - Eating a villager increases the hunger value by 10 units.
+  - HungerBar_Script.cs was used to receive and evaluate the hunger and karma values received from the eat() and changeKarma() methods in PlayerBehaviors.cs.
+  - Hunger Logistics
+    - The actual hunger increments and decrements are handles in PlayerBehaviors.cs. The hunger begins at 75 out of 100 units and begins decreasing from the start
+      at a rate of 1.5 units per second.
+    - Eating a villager increases the hunger value by 10 units.
