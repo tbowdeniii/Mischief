@@ -53,3 +53,13 @@ Concept:
   - PlayerPrefs variables were used to keep track of the score throughout level changes. 
   - The function updateScore(int scoreVal) takes the parameter scoreVal and adds it to the current score. This function also updates the PlayerPrefs variable for
     score.
+    
+    
+    
+ ## Team Members:
+ 
+ Raquel Hodgeson
+ Christian Gary
+ Isaiah Jones
+ Sheethal Reddy
+ Rakeem Spencer
