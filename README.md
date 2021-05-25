@@ -58,8 +58,8 @@ Concept:
     
  ## Team Members:
  
- Raquel Hodgeson
- Christian Gary
- Isaiah Jones
- Sheethal Reddy
- Rakeem Spencer
+ - Raquel Hodgeson
+ - Christian Gary
+ - Isaiah Jones
+ - Sheethal Reddy
+ - Rakeem Spencer
